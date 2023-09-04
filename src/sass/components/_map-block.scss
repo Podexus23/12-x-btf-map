@@ -1,0 +1,16 @@
+.map__block {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #a82020;
+  min-width: 6rem;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

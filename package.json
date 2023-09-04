@@ -1,0 +1,25 @@
+{
+  "name": "12-x-btf-map",
+  "version": "1.0.0",
+  "description": "Map for x beyound the frontiers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Podexus23/12-x-btf-map.git"
+  },
+  "keywords": [
+    "x-btf"
+  ],
+  "author": "Anton Serovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Podexus23/12-x-btf-map/issues"
+  },
+  "homepage": "https://github.com/Podexus23/12-x-btf-map#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

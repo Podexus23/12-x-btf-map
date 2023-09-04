@@ -6,12 +6,6 @@ body {
   position: relative;
 }
 
-.map {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(10, 10fr);
-  gap: 0.8rem;
-}
 .main {
   & .container {
     background: url(../../../../../src/assets/rm301-eye-10-c.jpg);

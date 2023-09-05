@@ -7,10 +7,11 @@ body {
 }
 
 .main {
+  background: linear-gradient(rgba(2, 12, 103, 0.331) 75%, transparent),
+    url(../../../src/assets/file-20220623-51658-fb0ewc.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   & .container {
-    background: url(../../../../../src/assets/rm301-eye-10-c.jpg);
-    background-size: cover;
-    background-repeat: repeat;
     position: relative;
     padding: 2rem;
   }

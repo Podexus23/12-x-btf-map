@@ -17,4 +17,29 @@
   user-select: none;
 
   font-size: 0.8rem;
+
+  &--argon {
+    background-color: #a0a050;
+    color: #fff;
+  }
+  &--boron {
+    background-color: #009070;
+    color: #fff;
+  }
+  &--paranid {
+    background-color: #a080a0;
+    color: #fff;
+  }
+  &--split {
+    background-color: #aa7634;
+    color: #fff;
+  }
+  &--teladi {
+    background-color: #0075a0;
+    color: #fff;
+  }
+  &--xenon {
+    background-color: #d00050;
+    color: #fff;
+  }
 }

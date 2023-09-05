@@ -1,4 +1,5 @@
-import { systems, allSystems } from "./data/systemsData.js";
+import { systems } from "./data/systemsData.js";
+import { races } from "./data/racesData.js";
 import { mapColSize, mapRowSize, mapSize } from "./config.js";
 
 const mainContainer = document.querySelector(".container");
@@ -26,10 +27,22 @@ const createMapBlocks = function (numOfBlocks) {
 /**
  * Add data to map block from Data about systems
  */
+
 const generateMap = function () {
   const names = Object.keys(systems);
-
+  //take all blocks
   let blocks = mapContainer.querySelectorAll(".map__block");
+
+  //Add content from data to generated block
+  const addContentToBlock = function (block, nameOfSystem) {
+    const data = systems[`${nameOfSystem}`];
+    block.textContent = nameOfSystem;
+    if (races.includes(data.race))
+      block.classList.add(`map__block--${data.race.toLowerCase()}`);
+  };
+
+  //Check if block data have same coordinates as system in data
+  //if true - add content, if false make block hidden
   blocks.forEach((block) => {
     const [x, y] = block.dataset.coords.split(",");
     let isEmpty = true;
@@ -38,16 +51,15 @@ const generateMap = function () {
       const [sysY, sysX] = systems[`${name}`].coords;
 
       if (+sysX === +x && +sysY === +y) {
-        block.textContent = name;
+        addContentToBlock(block, name);
+        //remove name of found system for faster search
         names.splice(i, 1);
-        block.classList.remove("hidden");
         isEmpty = false;
         return;
       }
     });
     if (isEmpty) block.classList.add("hidden");
   });
-  console.log(blocks);
 };
 
 const init = function () {

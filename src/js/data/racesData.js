@@ -1,1 +1,1 @@
-const races = ["Argon", "Boron", "Paranid", "Split", "Teladi", "Xenon"];
+export const races = ["Argon", "Boron", "Paranid", "Split", "Teladi", "Xenon"];

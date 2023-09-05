@@ -435,6 +435,30 @@ body {
   user-select: none;
   font-size: 0.8rem;
 }
+.map__block--argon {
+  background-color: #a0a050;
+  color: #fff;
+}
+.map__block--boron {
+  background-color: #009070;
+  color: #fff;
+}
+.map__block--paranid {
+  background-color: #a080a0;
+  color: #fff;
+}
+.map__block--split {
+  background-color: #aa7634;
+  color: #fff;
+}
+.map__block--teladi {
+  background-color: #0075a0;
+  color: #fff;
+}
+.map__block--xenon {
+  background-color: #d00050;
+  color: #fff;
+}
 
 .map {
   position: relative;
@@ -448,10 +472,12 @@ body {
   position: relative;
 }
 
-.main .container {
-  background: url(../../../../../src/assets/rm301-eye-10-c.jpg);
+.main {
+  background: linear-gradient(rgba(2, 12, 103, 0.331) 75%, transparent), url(../../../src/assets/file-20220623-51658-fb0ewc.webp);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+}
+.main .container {
   position: relative;
   padding: 2rem;
 }

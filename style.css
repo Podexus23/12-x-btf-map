@@ -341,7 +341,7 @@ a {
   text-decoration: none;
 }
 a:hover, a:active, a:focus {
-  color: rgb(34, 34, 34);
+  color: #020617;
   text-decoration: underline;
 }
 
@@ -349,8 +349,8 @@ a:hover, a:active, a:focus {
  * Basic typography style for copy text
  */
 body {
-  color: rgb(34, 34, 34);
-  font: normal 44.6428571429% "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #020617;
+  font: normal 44.6428571429% "Rubik", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 /**
@@ -421,9 +421,11 @@ body {
 
 .map__block {
   background-color: #fff;
-  border: 1px solid #a82020;
   min-width: 6rem;
   min-height: 6rem;
+  border-radius: 0.2rem;
+  border: 1px solid #bababa;
+  box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,31 +435,37 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .map__block--argon {
   background-color: #a0a050;
-  color: #fff;
+  color: #020617;
 }
 .map__block--boron {
   background-color: #009070;
-  color: #fff;
+  color: #020617;
 }
 .map__block--paranid {
   background-color: #a080a0;
-  color: #fff;
+  color: #020617;
 }
 .map__block--split {
   background-color: #aa7634;
-  color: #fff;
+  color: #020617;
 }
 .map__block--teladi {
   background-color: #0075a0;
-  color: #fff;
+  color: #f8fafc;
 }
 .map__block--xenon {
   background-color: #d00050;
-  color: #fff;
+  color: #f8fafc;
+}
+.map__block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0.4rem 0.2rem rgba(255, 255, 255, 0.3);
 }
 
 .map {

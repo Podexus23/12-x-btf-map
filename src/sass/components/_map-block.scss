@@ -1,8 +1,11 @@
 .map__block {
   background-color: #fff;
-  border: 1px solid #a82020;
   min-width: 6rem;
   min-height: 6rem;
+
+  border-radius: 0.2rem;
+  border: 1px solid #bababa;
+  box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.3);
 
   display: flex;
   align-items: center;
@@ -16,30 +19,38 @@
   -ms-user-select: none;
   user-select: none;
 
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+
+  transition: transform 0.2s, box-shadow 0.2s;
 
   &--argon {
     background-color: #a0a050;
-    color: #fff;
+    color: $text-color;
   }
   &--boron {
     background-color: #009070;
-    color: #fff;
+    color: $text-color;
   }
   &--paranid {
     background-color: #a080a0;
-    color: #fff;
+    color: $text-color;
   }
   &--split {
     background-color: #aa7634;
-    color: #fff;
+    color: $text-color;
   }
   &--teladi {
     background-color: #0075a0;
-    color: #fff;
+    color: $light-grey;
   }
   &--xenon {
     background-color: #d00050;
-    color: #fff;
+    color: $light-grey;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 0.4rem 0.2rem rgba(255, 255, 255, 0.3);
   }
 }

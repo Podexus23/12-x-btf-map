@@ -4,7 +4,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
+$text-font-stack: "Rubik", "Open Sans", "Helvetica Neue Light", "Helvetica Neue",
   "Helvetica", "Arial", sans-serif !default;
 
 /// Code (monospace) font family
@@ -17,7 +17,7 @@ $base-fs: 62.5%; //10px
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: #020617 !default;
 
 /// Main brand color
 /// @type Color
@@ -25,7 +25,7 @@ $brand-color: rgb(229, 0, 80) !default;
 
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: #f8fafc !default;
 
 /// Medium grey
 /// @type Color

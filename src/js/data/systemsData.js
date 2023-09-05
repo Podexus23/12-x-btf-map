@@ -67,30 +67,72 @@ const systems = {
   "Kingdom End": {
     race: "Boron",
     coords: [0, 0],
+    neighbours: {
+      north: null,
+      west: null,
+      south: "Three Worlds",
+      east: "Rolk's Drift",
+    },
   },
   "Rolk's Drift": {
     race: "Boron",
     coords: [0, 1],
+    neighbours: {
+      north: null,
+      west: "Kingdom End",
+      south: null,
+      east: "Queen's Space",
+    },
   },
   "Queen's Space": {
     race: "Boron",
     coords: [0, 2],
+    neighbours: {
+      north: null,
+      west: "Rolk's Drift",
+      south: null,
+      east: "Menelaus Fr.",
+    },
   },
   "Menelaus Fr.": {
     race: "Boron",
     coords: [0, 3],
+    neighbours: {
+      north: null,
+      west: "Queen's Space",
+      south: "Rolk's Fate",
+      east: "Ceo's Buckzoid",
+    },
   },
   "Ceo's Buckzoid": {
     race: "Argon",
     coords: [0, 4],
+    neighbours: {
+      north: null,
+      west: "Menelaus Fr.",
+      south: "Profit Share",
+      east: "Teladi Gain",
+    },
   },
   "Teladi Gain": {
     race: "Argon",
     coords: [0, 5],
+    neighbours: {
+      north: null,
+      west: "Ceo's Buckzoid",
+      south: "Seizewell",
+      east: "Family Whi",
+    },
   },
   "Family Whi": {
     race: "Split",
     coords: [0, 6],
+    neighbours: {
+      north: null,
+      west: "Teladi Gain",
+      south: "Family Zein",
+      east: null,
+    },
   },
 
   //second row

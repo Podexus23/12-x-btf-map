@@ -139,37 +139,74 @@ const systems = {
   "Three Worlds": {
     race: "Argon",
     coords: [1, 0],
+    neighbours: {
+      north: "Kingdom End",
+      west: null,
+      south: "Cloudbase NW",
+      east: "Power Circle",
+    },
   },
   "Power Circle": {
     race: "Argon",
     coords: [1, 1],
+    neighbours: {
+      north: null,
+      west: "Three Worlds",
+      east: "Antigone Mem.",
+      south: "Herron's Nebula",
+    },
   },
   "Antigone Mem.": {
     race: "Argon",
     coords: [1, 2],
+    neighbours: {
+      north: null,
+      west: "Power Circle",
+      east: null,
+      south: "The Hole",
+    },
   },
   "Rolk's Fate": {
     race: "Boron",
     coords: [1, 3],
+    neighbours: {
+      north: "Menelaus Fr.",
+      west: null,
+      east: null,
+      south: "Atreus Clouds",
+    },
   },
   "Profit Share": {
     race: "Teladi",
     coords: [1, 4],
+    neighbours: {
+      north: "Ceo's Buckzoid",
+      west: null,
+      east: "Seizewell",
+      south: "S'weed Drift",
+    },
   },
   Seizewell: {
     race: "Teladi",
-    neighbours: {
-      north: `Teladi Gain`,
-      west: "Profit Share",
-      south: "Greater Profit",
-      east: null,
-    },
     coords: [1, 5],
+    neighbours: {
+      north: "Teladi Gain",
+      west: "Profit Share",
+      east: null,
+      south: "Greater Profit",
+    },
   },
   "Family Zein": {
     race: "Split",
     coords: [1, 6],
+    neighbours: {
+      north: "Family Whi",
+      west: null,
+      east: null,
+      south: "Thuruk's Pride",
+    },
   },
+
   //third row
   "Cloudbase NW": {
     race: "Argon",

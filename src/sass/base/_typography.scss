@@ -3,5 +3,5 @@
  */
 body {
   color: $text-color;
-  font: normal $base-fs / 1.4 $text-font-stack;
+  font: normal calc($base-fs / 1.4) $text-font-stack;
 }

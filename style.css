@@ -483,12 +483,12 @@ body {
   z-index: 1;
   border: 3px solid rgb(255, 255, 255);
 }
-.map__block--side-e {
+.map__block--side-w {
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
 }
-.map__block--side-w {
+.map__block--side-e {
   left: 100%;
   top: 50%;
   transform: translateY(-50%);

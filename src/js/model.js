@@ -30,6 +30,25 @@ const createMapBlocks = function (numOfBlocks) {
  * Add data to map block with Data from systems.js
  */
 //Add content from data to generated block
+const addSidesToBlock = (system) => {
+  const sides = system.neighbors;
+  console.log(sides);
+  return `
+  <span class="map__block--side ${
+    sides.north ? "map__block--side-n" : "hidden"
+  }"></span>
+  <span class="map__block--side ${
+    sides.east ? "map__block--side-e" : "hidden"
+  }"></span>
+  <span class="map__block--side ${
+    sides.west ? "map__block--side-w" : "hidden"
+  }"></span>
+  <span class="map__block--side ${
+    sides.south ? "map__block--side-s" : "hidden"
+  }"></span>
+  `;
+};
+
 const addContentToBlock = function (block, nameOfSystem) {
   const data = systems[`${nameOfSystem}`];
   // block.textContent = nameOfSystem;
@@ -39,10 +58,7 @@ const addContentToBlock = function (block, nameOfSystem) {
   <div class="wrapper map__block--${data.race.toLowerCase()}">
             <p>${nameOfSystem}</p>
   </div>
-  <span class="map__block--side map__block--side-e"></span>
-  <span class="map__block--side map__block--side-w"></span>
-  <span class="map__block--side map__block--side-n"></span>
-  <span class="map__block--side map__block--side-s"></span>
+  ${addSidesToBlock(data)}
   `;
   block.insertAdjacentHTML("afterbegin", content);
 };

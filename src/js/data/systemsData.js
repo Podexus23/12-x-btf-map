@@ -67,7 +67,7 @@ const systems = {
   "Kingdom End": {
     race: "Boron",
     coords: [0, 0],
-    neighbours: {
+    neighbors: {
       north: null,
       west: null,
       south: "Three Worlds",
@@ -77,7 +77,7 @@ const systems = {
   "Rolk's Drift": {
     race: "Boron",
     coords: [0, 1],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Kingdom End",
       south: null,
@@ -87,7 +87,7 @@ const systems = {
   "Queen's Space": {
     race: "Boron",
     coords: [0, 2],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Rolk's Drift",
       south: null,
@@ -97,7 +97,7 @@ const systems = {
   "Menelaus Fr.": {
     race: "Boron",
     coords: [0, 3],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Queen's Space",
       south: "Rolk's Fate",
@@ -107,7 +107,7 @@ const systems = {
   "Ceo's Buckzoid": {
     race: "Argon",
     coords: [0, 4],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Menelaus Fr.",
       south: "Profit Share",
@@ -117,7 +117,7 @@ const systems = {
   "Teladi Gain": {
     race: "Argon",
     coords: [0, 5],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Ceo's Buckzoid",
       south: "Seizewell",
@@ -127,7 +127,7 @@ const systems = {
   "Family Whi": {
     race: "Split",
     coords: [0, 6],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Teladi Gain",
       south: "Family Zein",
@@ -139,7 +139,7 @@ const systems = {
   "Three Worlds": {
     race: "Argon",
     coords: [1, 0],
-    neighbours: {
+    neighbors: {
       north: "Kingdom End",
       west: null,
       south: "Cloudbase NW",
@@ -149,7 +149,7 @@ const systems = {
   "Power Circle": {
     race: "Argon",
     coords: [1, 1],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Three Worlds",
       east: "Antigone Mem.",
@@ -159,7 +159,7 @@ const systems = {
   "Antigone Mem.": {
     race: "Argon",
     coords: [1, 2],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Power Circle",
       east: null,
@@ -169,7 +169,7 @@ const systems = {
   "Rolk's Fate": {
     race: "Boron",
     coords: [1, 3],
-    neighbours: {
+    neighbors: {
       north: "Menelaus Fr.",
       west: null,
       east: null,
@@ -179,7 +179,7 @@ const systems = {
   "Profit Share": {
     race: "Teladi",
     coords: [1, 4],
-    neighbours: {
+    neighbors: {
       north: "Ceo's Buckzoid",
       west: null,
       east: "Seizewell",
@@ -189,7 +189,7 @@ const systems = {
   Seizewell: {
     race: "Teladi",
     coords: [1, 5],
-    neighbours: {
+    neighbors: {
       north: "Teladi Gain",
       west: "Profit Share",
       east: null,
@@ -199,7 +199,7 @@ const systems = {
   "Family Zein": {
     race: "Split",
     coords: [1, 6],
-    neighbours: {
+    neighbors: {
       north: "Family Whi",
       west: null,
       east: null,
@@ -211,7 +211,7 @@ const systems = {
   "Cloudbase NW": {
     race: "Argon",
     coords: [2, 0],
-    neighbours: {
+    neighbors: {
       north: "Three Worlds",
       west: null,
       east: "Herron's Nebula",
@@ -221,7 +221,7 @@ const systems = {
   "Herron's Nebula": {
     race: "Argon",
     coords: [2, 1],
-    neighbours: {
+    neighbors: {
       north: "Power Circle",
       west: "Cloudbase NW",
       east: "The Hole",
@@ -231,7 +231,7 @@ const systems = {
   "The Hole": {
     race: "Argon",
     coords: [2, 2],
-    neighbours: {
+    neighbors: {
       north: "Antigone Mem.",
       west: "Herron's Nebula",
       east: "Atreus Clouds",
@@ -241,7 +241,7 @@ const systems = {
   "Atreus Clouds": {
     race: "Boron",
     coords: [2, 3],
-    neighbours: {
+    neighbors: {
       north: "Rolk's Fate",
       west: "The Hole",
       east: null,
@@ -251,7 +251,7 @@ const systems = {
   "S'weed Drift": {
     race: "Teladi",
     coords: [2, 4],
-    neighbours: {
+    neighbors: {
       north: "Profit Share",
       west: null,
       east: "Greater Profit",
@@ -261,7 +261,7 @@ const systems = {
   "Greater Profit": {
     race: "Teladi",
     coords: [2, 5],
-    neighbours: {
+    neighbors: {
       north: "Seizewell",
       west: "S'weed Drift",
       east: null,
@@ -271,7 +271,7 @@ const systems = {
   "Thuruk's Pride": {
     race: "Split",
     coords: [2, 6],
-    neighbours: {
+    neighbors: {
       north: "Family Zein",
       west: null,
       east: "Family Pride",
@@ -281,7 +281,7 @@ const systems = {
   "Family Pride": {
     race: "Split",
     coords: [2, 7],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Thuruk's Pride",
       east: null,
@@ -293,7 +293,7 @@ const systems = {
   "Ringo Moon": {
     race: "Argon",
     coords: [3, 0],
-    neighbours: {
+    neighbors: {
       north: "Cloudbase NW",
       west: null,
       east: "Argon Prime",
@@ -303,7 +303,7 @@ const systems = {
   "Argon Prime": {
     race: "Argon",
     coords: [3, 1],
-    neighbours: {
+    neighbors: {
       north: "Herron's Nebula",
       west: "Ringo Moon",
       east: "The Wall",
@@ -313,7 +313,7 @@ const systems = {
   "The Wall": {
     race: "Argon",
     coords: [3, 2],
-    neighbours: {
+    neighbors: {
       north: "The Hole",
       west: "Argon Prime",
       east: null,
@@ -323,7 +323,7 @@ const systems = {
   "Xenon Sys. 1": {
     race: "Xenon",
     coords: [3, 3],
-    neighbours: {
+    neighbors: {
       north: "Atreus Clouds",
       west: null,
       east: "Xenon Sys. 2",
@@ -333,7 +333,7 @@ const systems = {
   "Xenon Sys. 2": {
     race: "Xenon",
     coords: [3, 4],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Xenon Sys. 1",
       east: null,
@@ -343,7 +343,7 @@ const systems = {
   "Blue Profit": {
     race: "Teladi",
     coords: [3, 5],
-    neighbours: {
+    neighbors: {
       north: "Greater Profit",
       west: null,
       east: null,
@@ -353,7 +353,7 @@ const systems = {
   "Chins Fire": {
     race: "Split",
     coords: [3, 6],
-    neighbours: {
+    neighbors: {
       north: "Thuruk's Pride",
       west: null,
       east: "Chins Clouds",
@@ -363,7 +363,7 @@ const systems = {
   "Chins Clouds": {
     race: "Split",
     coords: [3, 7],
-    neighbours: {
+    neighbors: {
       north: "Family Pride",
       west: "Chins Fire",
       east: null,
@@ -375,7 +375,7 @@ const systems = {
   "Red Light": {
     race: "Argon",
     coords: [4, 0],
-    neighbours: {
+    neighbors: {
       north: "Ringo Moon",
       west: null,
       east: "Light Home",
@@ -385,7 +385,7 @@ const systems = {
   "Light Home": {
     race: "Argon",
     coords: [4, 1],
-    neighbours: {
+    neighbors: {
       north: "Argon Prime",
       west: "Red Light",
       east: "President's End",
@@ -395,7 +395,7 @@ const systems = {
   "President's End": {
     race: "Argon",
     coords: [4, 2],
-    neighbours: {
+    neighbors: {
       north: "The Wall",
       west: "Light Home",
       east: "Xenon Sys. 3",
@@ -405,7 +405,7 @@ const systems = {
   "Xenon Sys. 3": {
     race: "Xenon",
     coords: [4, 3],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 1",
       west: "President's End",
       east: "Xenon Sys. 4",
@@ -415,7 +415,7 @@ const systems = {
   "Xenon Sys. 4": {
     race: "Xenon",
     coords: [4, 4],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 2",
       west: "Xenon Sys. 3",
       east: null,
@@ -425,7 +425,7 @@ const systems = {
   "Ceo's Sprite": {
     race: "Teladi",
     coords: [4, 5],
-    neighbours: {
+    neighbors: {
       north: "Blue Profit",
       west: null,
       east: null,
@@ -435,7 +435,7 @@ const systems = {
   "Family Chins": {
     race: "Split",
     coords: [4, 6],
-    neighbours: {
+    neighbors: {
       north: "Chins Fire",
       west: null,
       east: null,
@@ -447,7 +447,7 @@ const systems = {
   "Cloudbase SW": {
     race: "Argon",
     coords: [5, 0],
-    neighbours: {
+    neighbors: {
       north: "Red Light",
       west: null,
       east: "Ore Belt",
@@ -457,7 +457,7 @@ const systems = {
   "Ore Belt": {
     race: "Argon",
     coords: [5, 1],
-    neighbours: {
+    neighbors: {
       north: "Light Home",
       west: "Cloudbase SW",
       east: "Cloudbase SE",
@@ -467,7 +467,7 @@ const systems = {
   "Cloudbase SE": {
     race: "Argon",
     coords: [5, 2],
-    neighbours: {
+    neighbors: {
       north: "President's End",
       west: "Ore Belt",
       east: null,
@@ -477,7 +477,7 @@ const systems = {
   "Xenon Sys. 5": {
     race: "Xenon",
     coords: [5, 3],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 3",
       west: null,
       east: "Xenon Sys. 6",
@@ -487,7 +487,7 @@ const systems = {
   "Xenon Sys. 6": {
     race: "Xenon",
     coords: [5, 4],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 4",
       west: "Xenon Sys. 5",
       east: null,
@@ -497,7 +497,7 @@ const systems = {
   "Company Pride": {
     race: "Teladi",
     coords: [5, 5],
-    neighbours: {
+    neighbors: {
       north: "Ceo's Sprite",
       west: null,
       east: "Thuruk's Beard",
@@ -507,7 +507,7 @@ const systems = {
   "Thuruk's Beard": {
     race: "Split",
     coords: [5, 6],
-    neighbours: {
+    neighbors: {
       north: "Family Chins",
       west: "Company Pride",
       east: null,
@@ -519,7 +519,7 @@ const systems = {
   "Emperor Mines": {
     race: "Paranid",
     coords: [6, 0],
-    neighbours: {
+    neighbors: {
       north: "Cloudbase SW",
       west: null,
       east: "Paranid Prime",
@@ -529,7 +529,7 @@ const systems = {
   "Paranid Prime": {
     race: "Paranid",
     coords: [6, 1],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Emperor Mines",
       east: "Priest Rings",
@@ -539,7 +539,7 @@ const systems = {
   "Priest Rings": {
     race: "Paranid",
     coords: [6, 2],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Paranid Prime",
       east: "Priest's Pity",
@@ -549,7 +549,7 @@ const systems = {
   "Priest's Pity": {
     race: "Paranid",
     coords: [6, 3],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 5",
       west: "Priest Rings",
       east: "Xenon Sys. 7",
@@ -559,7 +559,7 @@ const systems = {
   "Xenon Sys. 7": {
     race: "Xenon",
     coords: [6, 4],
-    neighbours: {
+    neighbors: {
       north: "Xenon Sys. 6",
       west: null,
       east: "Xenon Sys. 8",
@@ -569,7 +569,7 @@ const systems = {
   "Xenon Sys. 8": {
     race: "Xenon",
     coords: [6, 5],
-    neighbours: {
+    neighbors: {
       north: null,
       west: "Xenon Sys. 7",
       east: "Xenon Sys. 9",
@@ -579,7 +579,7 @@ const systems = {
   "Xenon Sys. 9": {
     race: "Xenon",
     coords: [6, 6],
-    neighbours: {
+    neighbors: {
       north: "Thuruk's Beard",
       west: "Xenon Sys. 8",
       east: null,
@@ -591,7 +591,7 @@ const systems = {
   "Empire's Edge": {
     race: "Paranid",
     coords: [7, 1],
-    neighbours: {
+    neighbors: {
       north: "Paranid Prime",
       west: null,
       east: "Duke's Domain",
@@ -601,7 +601,7 @@ const systems = {
   "Duke's Domain": {
     race: "Paranid",
     coords: [7, 2],
-    neighbours: {
+    neighbors: {
       north: "Priest Rings",
       west: "Empire's Edge",
       east: "Emperor's Ridge",
@@ -611,7 +611,7 @@ const systems = {
   "Emperor's Ridge": {
     race: "Paranid",
     coords: [7, 3],
-    neighbours: {
+    neighbors: {
       north: "Priest's Pity",
       west: "Duke's Domain",
       east: null,

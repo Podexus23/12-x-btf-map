@@ -33,39 +33,56 @@
     border-radius: inherit;
     border: 1px solid #bababa;
     box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.3);
-  }
-
-  & .wrapper:hover {
-    z-index: 100;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
 
   &--argon {
     background-color: #a0a050;
     color: $text-color;
+
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#a0a050, 0.9);
+    }
   }
   &--boron {
     background-color: #009070;
     color: $text-color;
+
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#009070, 0.9);
+    }
   }
   &--paranid {
     background-color: #a080a0;
     color: $text-color;
+
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#a080a0, 0.9);
+    }
   }
   &--split {
     background-color: #aa7634;
     color: $text-color;
+
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#aa7634, 0.9);
+    }
   }
   &--teladi {
     background-color: #0075a0;
     color: $light-grey;
+
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#0075a0, 0.9);
+    }
   }
   &--xenon {
     background-color: #d00050;
     color: $light-grey;
-  }
 
-  &:hover {
-    box-shadow: 0 0 0.4rem 0.2rem rgba(255, 255, 255, 0.3);
+    &:hover {
+      box-shadow: 0 0 0.4rem 0.2rem rgba(#d00050, 0.9);
+    }
   }
 
   &--side {

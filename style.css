@@ -446,36 +446,49 @@ body {
   border-radius: inherit;
   border: 1px solid #bababa;
   box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.3);
-}
-.map__block .wrapper:hover {
-  z-index: 100;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .map__block--argon {
   background-color: #a0a050;
   color: #020617;
 }
+.map__block--argon:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(160, 160, 80, 0.9);
+}
 .map__block--boron {
   background-color: #009070;
   color: #020617;
+}
+.map__block--boron:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(0, 144, 112, 0.9);
 }
 .map__block--paranid {
   background-color: #a080a0;
   color: #020617;
 }
+.map__block--paranid:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(160, 128, 160, 0.9);
+}
 .map__block--split {
   background-color: #aa7634;
   color: #020617;
+}
+.map__block--split:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(170, 118, 52, 0.9);
 }
 .map__block--teladi {
   background-color: #0075a0;
   color: #f8fafc;
 }
+.map__block--teladi:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(0, 117, 160, 0.9);
+}
 .map__block--xenon {
   background-color: #d00050;
   color: #f8fafc;
 }
-.map__block:hover {
-  box-shadow: 0 0 0.4rem 0.2rem rgba(255, 255, 255, 0.3);
+.map__block--xenon:hover {
+  box-shadow: 0 0 0.4rem 0.2rem rgba(208, 0, 80, 0.9);
 }
 .map__block--side {
   position: absolute;
@@ -508,7 +521,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 body {
